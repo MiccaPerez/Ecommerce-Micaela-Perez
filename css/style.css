@@ -1,0 +1,347 @@
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+/* Resetear estilos y configuración de fuente global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-size: 10px;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; /* Elimina los márgenes del body */
+    display: flex; /* Usar flexbox para permitir la alineación */
+    flex-direction: column; /* Alinear los hijos en una columna */
+}
+
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    z-index: 1000;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar .logo {
+    height: 130px;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1.6em;
+    transition: background-color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    background-color: rgba(151, 147, 147, 0.3);
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url(../img/nuevo\ banner\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px 20px 20px; /* Ajuste para el espacio del header */
+    color: white;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1, .hero h2, .hero p {
+    margin: 0;
+}
+
+/* Sección de Productos--------------------- */
+#productos {
+    text-align: center;
+    background-color: #e4e6e4;
+    padding: 2em 0;
+    width: 100%;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.producto-card {
+    background-color: #b7c7b9eb;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    flex: 0 1 calc(33.333% - 20px);
+    transition: transform 0.2s;
+    
+}
+
+.producto-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.producto-card img {
+    max-width: 100%; /* Asegura que la imagen no sobrepase el ancho del contenedor */
+    height: auto;    /* Mantiene la relación de aspecto */
+    border-radius: 8px; /* Opcional: para redondear las esquinas de la imagen */
+}
+
+#productos h2, h3 {
+    font-size: 2em; /* Tamaño de fuente más grande */
+    color: #000000; /* Color que combine con el diseño (puedes cambiarlo) */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    margin-bottom: 40px; /* Espacio debajo del título */
+    font-weight: bold; /* Hacer el texto más grueso */
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+#productos h1{
+    font-size: 3em;
+    margin-bottom: 40px; /* Espacio debajo del título */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-shadow: 1px 1px 2px rgba(178, 180, 178, 0.2); /* Sombra para dar profundidad */
+    margin-bottom: 30px; /* Menor espacio entre la imagen y el título */
+color: #000000;
+}
+
+#productos h1 {
+    font-size: 3em;
+    margin: 0; /* Eliminar margen para evitar espacio extra */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-shadow: 1px 1px 2px rgba(178, 180, 178, 0.2); /* Sombra para dar profundidad */
+}
+
+.producto-imagen {
+    margin-bottom: 30px; /* Menor espacio entre la imagen y el título */
+}
+p {
+    font-size: 1.5em;
+    margin: 40px 0; /* Espacio superior e inferior para el párrafo */
+    text-align: center; /* Centra el texto del párrafo */
+}
+
+.titulo-recuadro {
+    background-color: #e4e6e4; /* Color de fondo del recuadro */
+    padding: 20px; /* Espacio interior del recuadro */
+    border: 2px solid #e4e6e4; /* Color y grosor del borde */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.473); /* Sombra para dar profundidad */
+    text-align: center; /* Centrar el texto */
+    margin: 0 auto 40px auto; /* Centramos el recuadro y dejamos margen abajo */
+    width: 80%; /* Cambia este valor para ajustar el ancho (puede ser un porcentaje o en píxeles) */
+    max-width: 900px; /* Ancho máximo opcional */
+    margin: 20px auto 40px auto;
+}
+
+/* Reseñas */
+/* Estilos Generales para Reseñas */
+
+/* Reseñas */
+/* Estilos Generales para Reseñas */
+.reseñas {
+    background-color: e4e6e4; /* Fondo claro para la sección */
+    padding: 40px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    flex: 1; /* Permite que esta sección ocupe el espacio disponible */
+}
+
+/* Título de Reseñas */
+.reseñas h2 {
+    font-size: 2.5em; /* Tamaño del título */
+    color: #4D8F44; /* Color del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Contenedor de Reseñas */
+.container {
+    display: flex; /* Usar Flexbox */
+    justify-content: space-around; /* Espaciado entre elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan si es necesario */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+/* Estilo de los Artículos de Reseñas */
+.item {
+    background-color: #ffffff; /* Fondo blanco para los artículos */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaciado interno */
+    margin: 10px; /* Espacio entre artículos */
+    flex: 1 1 calc(30% - 20px); /* Controlar el ancho de los artículos */
+    max-width: 300px; /* Ancho máximo para cada artículo */
+    transition: transform 0.2s; /* Efecto suave al pasar el mouse */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Efecto de escalado al pasar el mouse */
+}
+
+/* Estilo de los Nombres de Reseñas */
+.item h4 {
+    margin-top: 15px; /* Espacio arriba del nombre */
+    font-size: 1.2em; /* Tamaño del nombre */
+    color: #4D8F44; /* Color del nombre */
+    font-weight: bold; /* Negrita para el nombre */
+}
+
+/* Contacto */
+.contacto {
+    background-color: #ffffff; /* Fondo blanco para contraste */
+    padding: 200px 40px; /* Espaciado interno */
+    margin: 30px auto; /* Centrado horizontal */
+    max-width: 1200px; /* Ancho máximo */
+    text-align: left; /* Texto alineado a la izquierda */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Sombra más intensa */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s; /* Suavizar la transformación */
+    flex: 1; /* Permite que esta sección ocupe el espacio disponible */
+}
+
+.contacto:hover {
+    transform: translateY(-5px); /* Efecto al pasar el mouse */
+}
+
+/* Estilo de los títulos */
+.contacto h2 {
+    font-size: 2em; /* Tamaño de fuente para el título */
+    color: #000000; /* Color del texto del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    border-bottom: 2px solid #4D8F44; /* Línea debajo del título */
+    padding-bottom: 10px; /* Espacio entre el texto y la línea */
+}
+
+/* Estilo de los campos del formulario */
+.contacto input,
+.contacto textarea {
+    width: 100%; /* Ancho completo */
+    padding: 12px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espacio entre campos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente */
+    transition: border-color 0.3s; /* Suavizar el cambio de color del borde */
+    
+}
+
+.contacto input:focus,
+.contacto textarea:focus {
+    border-color: #4D8F44; /* Cambiar color del borde al enfocar */
+}
+
+/* Estilo de los botones */
+.contacto button {
+    background-color: #089944; /* Color del botón */
+    color: white; /* Color del texto */
+    padding: 12px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    width: 100%; /* Ancho completo */
+    font-size: 1.2em; /* Tamaño de fuente más grande */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+}
+
+
+/* Efecto al pasar el mouse sobre el botón */
+.contacto button:hover {
+    background-color: #0a4625; /* Color más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevar el botón */
+}
+
+/* Redes Sociales -------------------------------------*/
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    bottom: 0; /* Asegura que esté al final de la página */
+    
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.social-icon img:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.redes-sociales h1 {
+    margin-bottom: 40px; /* Ajusta el valor según lo necesites */
+}
+
+
+/* Footer */
+footer {
+    background-color: #f0f0f0;
+    color: #575656;
+    text-align: center;
+    padding: 0px;
+    font-size: 1.6em;
+    width: 100%;
+    bottom: 0; /* Asegura que esté al final de la página */
+    margin: 0;
+}
+
+    
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar nav ul li a {
+        font-size: 1.4em;
+    }
+    
+    .productos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .producto-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
